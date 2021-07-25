@@ -9,7 +9,7 @@ variable "slack_tokens" {
 }
 
 module "deadtous" {
-    source = "jonohill/terraform-aws-deadtous"
+    source = "jonohill/deadtous/aws"
     slack_tokens = var.slack_tokens
     # image_tag = "0.1.7-lambda" # image_tag is optional, the module should already reference the latest
     # name = "deadtous" # deadtous by default, but you could change it if you need a test version or multiple
