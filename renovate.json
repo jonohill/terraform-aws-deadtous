@@ -1,0 +1,20 @@
+{
+    "extends": [
+        "config:base"
+    ],
+    "automerge": true,
+    "regexManagers": [
+        {
+            "fileMatch": [
+                "^main.tf$",
+                "^variables.tf$"
+            ],
+            "matchStrings": [
+                "(?<currentValue>\\d+\\.\\d+\\.\\d+-lambda?)"
+            ],
+            "depNameTemplate": "jonoh/deadtous",
+            "datasourceTemplate": "docker",
+            "versioningTemplate": "docker"
+        }
+    ]
+}
