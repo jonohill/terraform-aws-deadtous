@@ -22,7 +22,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          VERSION="$(cat variables.tf | grep -o '\d\+\.\d\+\.\d\+')"
+          VERSION="$(cat variables.tf | grep -o '[0-9]\+\.[0-9]\+\.[0-9]\+')"
           if ! git rev-parse "$VERSION"; then
             git tag "$VERSION"
             git push --tags
