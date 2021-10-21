@@ -6,7 +6,7 @@ variable "name" {
 variable "image_tag" {
     description = "Image tag for deadtous image (added to ECR)"
     type = string
-    default = "1.0.1-lambda"
+    default = "1.0.2-lambda"
 }
 
 variable "slack_tokens" {
