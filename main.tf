@@ -65,7 +65,7 @@ resource "aws_cloudwatch_log_group" "access_logs" {
 
 module "lambda" {
     source  = "terraform-aws-modules/lambda/aws"
-    version = "2.7.0"
+    version = "2.36.0"
   
     function_name = var.name
     create_package = false
