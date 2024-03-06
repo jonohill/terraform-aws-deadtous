@@ -100,7 +100,7 @@ module "lambda" {
 
 module "apigateway-v2" {
     source  = "terraform-aws-modules/apigateway-v2/aws"
-    version = "1.2.0"
+    version = "3.1.1"
     
     name = var.name
     protocol_type = "HTTP"
